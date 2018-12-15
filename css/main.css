@@ -1,0 +1,171 @@
+html, body {
+	margin: 0;
+	font-family: 'Istok Web', sans-serif;
+	overflow-x: hidden;
+}
+
+main {
+	height: 50vh;
+	width: 100%;
+	margin: 0;
+}
+
+header {
+	display: block;
+	margin: 50vh auto 0 auto;
+	position: relative;
+	height: auto;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.hidden {
+	opacity: 0;
+	margin-top: 36px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.character {
+	font-weight: bold;
+	font-size: 14vw;
+	opacity: 0;
+}
+
+#text {
+	margin: 0;
+	font-weight: bold;
+	font-size: 14vw;
+	display: inline-block;
+	color: rgba(255, 255, 255, 0.4);
+	text-shadow: 0 0 0px #222;
+	white-space: nowrap;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+@media only screen and (max-width: 600px) {
+	.character {
+		font-size: 20vw;
+	}
+	#text {
+		font-size: 20vw;
+	}
+}
+
+header h2 {
+	display: block;
+	text-align: center;
+	font-size: 32px;
+	color: #888;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+header b {
+	color: red;
+}
+
+@media only screen and (max-width: 1000px) {
+	header h2 {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	header h2 {
+		font-size: 18px;
+		padding-top: 0;
+	}
+}
+
+/* PORTFOLIO SECTION */
+
+#portfolio {
+	margin: 0;
+	width: 100%;
+	padding: 32px;
+	display: none;
+	box-sizing: border-box;
+}
+
+.port-info {
+	width: 600px;
+	margin: auto;
+	height: auto;
+	padding-bottom: 96px;
+}
+
+@media only screen and (max-width: 648px) {
+	.port-info {
+		width: 90%;
+	}
+}
+
+.port-info a {
+	text-align: center;
+	display: block;
+	font-size: 24px;
+	padding-bottom: 12px;
+	font-weight: normal;
+	color: #444;
+	text-decoration: none;
+}
+
+.port-info a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.port-info span {
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	color: #888;
+}
+
+/* FOOTER */
+
+footer {
+	width: 100%;
+	background-color: #e1e1e1;
+	padding: 6px;
+	display: none;
+}
+
+#footer-info {
+	width: 600px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 50% 25% 25%;
+}
+
+#footer-info a {
+	font-size: 24px;
+	color: #444;
+}
+
+.fl-r {
+	text-align: right;
+}
+
+@media only screen and (max-width: 648px) {
+	#footer-info {
+		width: 80%;
+	}
+	#footer-info a {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#footer-info {
+		grid-template-columns: 60% 20% 20%;
+	}
+	#footer-info a {
+		font-size: 13px;
+	}
+}
